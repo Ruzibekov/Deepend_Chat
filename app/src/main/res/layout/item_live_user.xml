@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_marginHorizontal="14dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/image_live_user"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/circle_outlined_blue"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+
+        <TextView
+            android:id="@+id/text_live_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:paddingHorizontal="7dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:background="@drawable/rounded_16_red"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="@color/white"
+            android:text="@string/live"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_username_live_user"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:textColor="@color/black"
+        android:text="Tecnogeeks"/>
+
+</LinearLayout>
