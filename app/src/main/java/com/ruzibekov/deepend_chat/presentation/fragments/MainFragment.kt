@@ -1,16 +1,12 @@
 package com.ruzibekov.deepend_chat.presentation.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.ruzibekov.deepend_chat.R
 import com.ruzibekov.deepend_chat.databinding.FragmentMainBinding
-import com.ruzibekov.deepend_chat.models.ChatModel
-import com.ruzibekov.deepend_chat.models.LiveUserModel
-import com.ruzibekov.deepend_chat.presentation.fragments.chats.ChatsLiveUsersAdapter
-import com.ruzibekov.deepend_chat.presentation.fragments.chats.ChatsMainAdapter
+import com.ruzibekov.deepend_chat.presentation.fragments.chats.ChatsFragment
+import com.ruzibekov.deepend_chat.presentation.fragments.profile.ProfileFragment
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     private lateinit var binding: FragmentMainBinding
@@ -18,37 +14,20 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMainBinding.bind(view)
-        binding.recyclerLiveUsers.adapter = ChatsLiveUsersAdapter(getLiveUsersDatas())
-        binding.recyclerChatsMain.adapter = ChatsMainAdapter(getChats())
+        setFragment(ChatsFragment())
+
+        binding.bottomNavMain.setOnItemSelectedListener {
+            when (it.title) {
+                "Chats" -> setFragment(ChatsFragment())
+//                "Groups" -> setFragment(GroupsFragment())
+                "Profile" -> setFragment(ProfileFragment())
+            }
+            true
+        }
     }
 
-    private fun getLiveUsersDatas(): ArrayList<LiveUserModel> {
-        val liveUsers = arrayListOf<LiveUserModel>()
-        liveUsers.add(LiveUserModel(image = R.drawable.ic_launcher_foreground, username = "Ruzibekov_44", true))
-        liveUsers.add(LiveUserModel(image = R.drawable.ic_launcher_foreground, username = "Ruzibekov_44", true))
-        liveUsers.add(LiveUserModel(image = R.drawable.ic_launcher_foreground, username = "Ruzibekov_44", true))
-        liveUsers.add(LiveUserModel(image = R.drawable.ic_launcher_foreground, username = "Ruzibekov_44", true))
-        liveUsers.add(LiveUserModel(image = R.drawable.ic_launcher_foreground, username = "Ruzibekov_44", true))
-        liveUsers.add(LiveUserModel(image = R.drawable.ic_launcher_foreground, username = "Ruzibekov_44", true))
-        liveUsers.add(LiveUserModel(image = R.drawable.ic_launcher_foreground, username = "Ruzibekov_44", true))
-
-        return liveUsers
-    }
-
-    private fun getChats(): ArrayList<ChatModel>{
-        val chats = arrayListOf<ChatModel>()
-        chats.add(ChatModel(R.drawable.ic_launcher_background, true, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        chats.add(ChatModel(R.drawable.ic_launcher_background, false, "Shavkatbek", "Qayerlarda yuribsan?", "12:45", 5))
-        return chats
+    private fun setFragment(fragment: Fragment) {
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container_main_fragment, fragment).commit()
     }
 }
