@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/image_main_chat"
+        android:layout_width="60dp"
+        android:layout_rowSpan="2"
+        android:layout_marginEnd="25dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/text_username_chat"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:layout_marginTop="5dp"
+        tools:text="Tecnogeeks"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_last_message_text"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="bottom"
+        tools:text="Non fringilla nam ornare urna tellus ac."
+        android:textSize="10sp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:textColor="@color/gray"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tv_last_message_time"
+        android:layout_column="2"
+        android:layout_row="0"
+        tools:text="12:34 PM"
+        android:textSize="14sp"
+        android:layout_gravity="end"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_message_count"
+        android:layout_gravity="end|bottom"
+        tools:text="312"
+        android:textSize="10sp"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:textColor="@color/gray"
+        tools:ignore="SmallSp" />
+
+</GridLayout>

@@ -6,14 +6,19 @@
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/drawable/circle_outlined_blue.xml" value="0.1535" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/drawable/ic_chats.xml" value="0.1535" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/drawable/ic_group.xml" value="0.1535" />
+        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1535" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/drawable/ic_moon.xml" value="0.1535" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/drawable/ic_search.xml" value="0.1535" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/drawable/rounded_16_red.xml" value="0.1535" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/drawable/top_rounded_light_20.xml" value="0.1535" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
-        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/fragment_main.xml" value="0.18" />
+        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/fragment_chats.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/fragment_main.xml" value="0.2" />
+        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/item_chat_main.xml" value="0.9" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/item_live_accounts.xml" value="0.22447916666666667" />
-        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/item_live_user.xml" value="1.25" />
+        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/item_live_user.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/layout/item_profile_settings.xml" value="0.22447916666666667" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/menu/bottom_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/menu/main_bottom_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Android Projects/Deepend_Chat/app/src/main/res/menu/menu_main_toolbar.xml" value="0.22447916666666667" />

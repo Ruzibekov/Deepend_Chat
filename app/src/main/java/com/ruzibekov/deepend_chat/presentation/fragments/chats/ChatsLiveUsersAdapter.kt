@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ruzibekov.deepend_chat.R
 import com.ruzibekov.deepend_chat.models.LiveUserModel
 
-class ChatsLiveUsersAdapter(private val liveUsers: MutableList<LiveUserModel>) :
+class ChatsLiveUsersAdapter(private val liveUsers: ArrayList<LiveUserModel>) :
     RecyclerView.Adapter<ChatsLiveUsersAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view)
