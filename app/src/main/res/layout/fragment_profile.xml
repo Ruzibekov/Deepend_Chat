@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/iv_image_profile"
-            android:text="Jacob Jones" />
+            tools:text="Jacob Jones" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
             android:layout_below="@id/tv_user_name_profile"
             android:layout_alignParentBottom="true"
             android:layout_toEndOf="@id/iv_image_profile"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
@@ -52,18 +52,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingVertical="33dp"
                 android:orientation="vertical">
 
                 <GridLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="24dp"
-                    android:layout_marginTop="33dp">
+                    android:layout_marginHorizontal="24dp">
 
                     <ImageView
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/ic_moon"
-                        app:tint="@color/blue" />
+                        app:tint="@color/blue"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_gravity="center_vertical"
@@ -80,33 +81,136 @@
                     android:layout_marginBottom="12dp"
                     android:background="@color/light_gray" />
 
-                <include
-                    android:id="@+id/include_account_settins"
-                    layout="@layout/item_profile_settings" />
+                <GridLayout
+                    style="@style/Profile_Settings_ParentLayout">
 
-                <include
-                    android:id="@+id/include_notification_settins"
-                    layout="@layout/item_profile_settings" />
+                    <ImageView
+                        style="@style/Profile_Settings_Image"
+                        android:src="@drawable/ic_user"
+                        tools:ignore="ContentDescription" />
 
-                <include
-                    android:id="@+id/include_security_settins"
-                    layout="@layout/item_profile_settings" />
+                    <TextView
+                        style="@style/Profile_Settings_Title"
+                        android:text="@string/account" />
 
-                <include
-                    android:id="@+id/include_storage_settins"
-                    layout="@layout/item_profile_settings" />
+                    <TextView
+                        style="@style/Profile_Settings_Subtitle"
+                        android:text="@string/name_city_phone" />
 
-                <include
-                    android:id="@+id/include_chats_settins"
-                    layout="@layout/item_profile_settings" />
+                    <ImageView
+                        style="@style/Profile_Settings_Next_Image"
+                        tools:ignore="ContentDescription" />
+                </GridLayout>
 
-                <include
-                    android:id="@+id/include_devices_settins"
-                    layout="@layout/item_profile_settings" />
+                <GridLayout
+                    style="@style/Profile_Settings_ParentLayout">
 
-                <include
-                    android:id="@+id/include_help_settins"
-                    layout="@layout/item_profile_settings" />
+                    <ImageView
+                        style="@style/Profile_Settings_Image"
+                        android:src="@drawable/ic_notification"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_rowSpan="2"
+                        style="@style/Profile_Settings_Title"
+                        android:text="@string/notification" />
+
+                    <ImageView
+                        style="@style/Profile_Settings_Next_Image"
+                        tools:ignore="ContentDescription" />
+                </GridLayout>
+
+                <GridLayout
+                    style="@style/Profile_Settings_ParentLayout">
+
+                    <ImageView
+                        style="@style/Profile_Settings_Image"
+                        android:src="@drawable/ic_lock"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_rowSpan="2"
+                        style="@style/Profile_Settings_Title"
+                        android:text="@string/security_and_privacy" />
+
+                    <ImageView
+                        style="@style/Profile_Settings_Next_Image"
+                        tools:ignore="ContentDescription" />
+                </GridLayout>
+
+                <GridLayout
+                    style="@style/Profile_Settings_ParentLayout">
+
+                    <ImageView
+                        style="@style/Profile_Settings_Image"
+                        android:src="@drawable/ic_storage"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_rowSpan="2"
+                        style="@style/Profile_Settings_Title"
+                        android:text="@string/storage" />
+
+                    <ImageView
+                        style="@style/Profile_Settings_Next_Image"
+                        tools:ignore="ContentDescription" />
+                </GridLayout>
+
+                <GridLayout
+                    style="@style/Profile_Settings_ParentLayout">
+
+                    <ImageView
+                        style="@style/Profile_Settings_Image"
+                        android:src="@drawable/ic_chats"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        style="@style/Profile_Settings_Title"
+                        android:text="@string/chats" />
+
+                    <TextView
+                        style="@style/Profile_Settings_Subtitle"
+                        android:text="@string/themes_and_personalization" />
+
+                    <ImageView
+                        style="@style/Profile_Settings_Next_Image"
+                        tools:ignore="ContentDescription" />
+                </GridLayout>
+
+                <GridLayout
+                    style="@style/Profile_Settings_ParentLayout">
+
+                    <ImageView
+                        style="@style/Profile_Settings_Image"
+                        android:src="@drawable/ic_devices"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_rowSpan="2"
+                        style="@style/Profile_Settings_Title"
+                        android:text="@string/devices" />
+
+                    <ImageView
+                        style="@style/Profile_Settings_Next_Image"
+                        tools:ignore="ContentDescription" />
+                </GridLayout>
+
+                <GridLayout
+                    style="@style/Profile_Settings_ParentLayout">
+
+                    <ImageView
+                        style="@style/Profile_Settings_Image"
+                        android:src="@drawable/ic_warning"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_rowSpan="2"
+                        style="@style/Profile_Settings_Title"
+                        android:text="@string/help" />
+
+                </GridLayout>
+
+
             </LinearLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>

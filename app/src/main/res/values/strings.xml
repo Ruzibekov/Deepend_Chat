@@ -9,4 +9,27 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="search">Search</string>
     <string name="live">LIVE</string>
+    <string name="account">Account</string>
+    <string name="name_city_phone">Name, City, Phone</string>
+    <string name="security_and_privacy">Security and Privacy</string>
+    <string name="notification">Notification</string>
+    <string name="storage">Storage</string>
+    <string name="themes_and_personalization">Themes and Personalization</string>
+    <string name="devices">Devices</string>
+    <string name="help">Help</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="password">Password</string>
+    <string name="last_name">Last name</string>
+    <string name="enter_your_last_name">Enter your Last name</string>
+    <string name="enter_your_firstname">Enter your First name</string>
+    <string name="first_name">First name</string>
+    <string name="register">Register</string>
+    <string name="user_photo">User Photo</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_your_phone_number">Enter your Phone number</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email_adress">Enter your Email adress</string>
+    <string name="username">Username</string>
+    <string name="enter_your_username">Enter your Username</string>
+    <string name="login">Login</string>
 </resources>

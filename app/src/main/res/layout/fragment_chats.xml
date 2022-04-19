@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_above="@id/bottom_nav_main"
-    android:layout_below="@id/toolbar_main"
-    android:layout_marginTop="10dp"
-    android:orientation="vertical"
-    tools:context=".presentation.fragments.chats.ChatsFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        tools:context=".presentation.fragments.chats.ChatsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_live_users"
@@ -33,3 +37,14 @@
             tools:listitem="@layout/item_chat_main" />
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/img_btn_add_chat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_add_chat"
+        android:background="@drawable/circle_blue"
+        tools:ignore="ContentDescription" />
+
+</FrameLayout>

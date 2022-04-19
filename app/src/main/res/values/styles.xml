@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Profile_Settings_Image">Profile_Settings
+        <item name="android:layout_rowSpan">2</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:tint">@color/blue</item>
+    </style>
+
+    <style name="Profile_Settings_Title">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">13dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Profile_Settings_Subtitle">
+        <item name="android:layout_row">1</item>
+        <item name="android:layout_column">1</item>
+        <item name="android:layout_marginStart">13dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Profile_Settings_Next_Image">
+        <item name="android:layout_row">0</item>
+        <item name="android:layout_rowSpan">2</item>
+        <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:src">@drawable/ic_next</item>
+    </style>
+
+    <style name="Profile_Settings_ParentLayout">Profile_Settings_Parent_Layout
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal" tools:ignore="NewApi">24dp</item>
+        <item name="android:layout_marginTop">18dp</item>
+    </style>
+
+    <style name="EditText_Login_Register">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/rounded_outlined_blue_10</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textColorHint">@color/blue_30</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="Text_Login_Register">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
